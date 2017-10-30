@@ -16,10 +16,14 @@ class Song
     @@count
   end
 
-  def self.artists
+  def self.genres(genre)
+    if @@genres.include?(genre) == false
+      @@genres << genre
+    end
+      
   end
 
-  def self.genres
+  def self.artists
   end
 
   def self.genre_count
