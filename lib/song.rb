@@ -31,7 +31,7 @@ class Song
     puts @@genres
     @@genres.each do |genre|
       if genre_count.keys.include?(genre)
-        genre_count[genre].value += 1
+        genre_count[genre].values += 1
       else
         genre_count[genre] = 1
       end
