@@ -30,7 +30,7 @@ class Song
     genre_count = {}
     puts @@genres
     @@genres.each do |genre|
-      if genre_count.keys != genre
+      if genre_count[genre] != genre
         genre_count[genre] = 1
       else
         genre_count[genre].value += 1
